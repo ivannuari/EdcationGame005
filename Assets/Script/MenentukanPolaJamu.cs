@@ -7,7 +7,7 @@ using TMPro;
 
 public class MenentukanPolaJamu : MonoBehaviour
 {
-    public TMP_Text[] Un;
+    public TMP_InputField[] Un;
 
     public TMP_InputField[] inputJawaban;
     public Button[] bahanLain;
@@ -17,13 +17,19 @@ public class MenentukanPolaJamu : MonoBehaviour
     public bool isSereh = false, isJahe = false, isKunyit = false;
     private bool sereh = false , jahe = false , kunyit = false;
 
-    private string a , b;
+    private string a , b , hj , kn , br , hj2 , br2;
 
     private int hijau , kuning , biru , hijau1 , biru1;
 
     void Start()
     {
         hijau = 0; kuning = 0; biru = 0;
+
+        foreach (TMP_InputField i in Un)
+        {
+            i.interactable = false;
+        }
+
         foreach (TMP_InputField i in inputJawaban)
         {
             i.interactable = false;
@@ -69,6 +75,15 @@ public class MenentukanPolaJamu : MonoBehaviour
     void Selesai()
     {
         dialogue.text = "masukan jawaban mu!";
+        foreach (TMP_InputField i in Un)
+        {
+            i.interactable = true;
+        }
+    }
+
+    void JawabanBenar()
+    {
+        dialogue.text = "masukan jawaban mu!";
         foreach (TMP_InputField i in inputJawaban)
         {
             i.interactable = true;
@@ -111,6 +126,87 @@ public class MenentukanPolaJamu : MonoBehaviour
     public void InputJawabanKiri(string aa)
     {
         b = aa;
+    }
+
+    public void JawabanKuning(string k)
+    {
+        kn = k;
+        Debug.Log(k);
+        if(sereh)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+        else if(jahe)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+        else if(kunyit)
+        {
+            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            {
+                JawabanBenar();
+            }
+        }
+    }
+
+    public void JawabanHijau(string h)
+    {
+        hj = h;
+        Debug.Log(h);
+        if(sereh)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+        else if(jahe)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+        else if(kunyit)
+        {
+            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            {
+                JawabanBenar();
+            }
+        }
+    }
+
+    public void JawabanBiru(string b)
+    {
+        br = b;
+        Debug.Log(b);
+        if(sereh)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+        else if(jahe)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+        else if(kunyit)
+        {
+            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            {
+                JawabanBenar();
+            }
+        }
     }
 
     public void InputBahan(string bahan , string warna)
@@ -182,8 +278,7 @@ public class MenentukanPolaJamu : MonoBehaviour
             {
                 hijau = 1;
                 nampan[0].GetComponent<BoxCollider2D>().enabled = false;
-            }
-            Un[0].text = hijau.ToString();
+            } 
         }
         else if(bahan == "jahe")
         {
@@ -192,14 +287,12 @@ public class MenentukanPolaJamu : MonoBehaviour
                 hijau = 2;
                 nampan[0].GetComponent<BoxCollider2D>().enabled = false;
             }
-            float m = (float)hijau / 2f;
-            Un[0].text = m.ToString();
+            
         }
         else if(bahan == "kunyit" && hijau >= 2)
         {
             hijau = 2;
             nampan[0].GetComponent<BoxCollider2D>().enabled = false;
-            Un[0].text = hijau.ToString();
         }
         
     }
@@ -219,7 +312,7 @@ public class MenentukanPolaJamu : MonoBehaviour
                 kuning = 2;
                 nampan[1].GetComponent<BoxCollider2D>().enabled = false;
             }
-            Un[1].text = kuning.ToString();
+            
         }
         else if(bahan == "jahe")
         {
@@ -228,8 +321,6 @@ public class MenentukanPolaJamu : MonoBehaviour
                 kuning = 4;
                 nampan[1].GetComponent<BoxCollider2D>().enabled = false;
             }
-            float m = (float)kuning / 2f;
-            Un[1].text = Mathf.Floor(m).ToString();
         }
         else if(bahan == "kunyit" && kuning >= 6)
         {
@@ -253,7 +344,7 @@ public class MenentukanPolaJamu : MonoBehaviour
                 biru = 3;
                 nampan[2].GetComponent<BoxCollider2D>().enabled = false;
             }
-            Un[2].text = biru.ToString();
+            
         }
         else if(bahan == "jahe")
         {
@@ -262,8 +353,6 @@ public class MenentukanPolaJamu : MonoBehaviour
                 biru = 6;
                 nampan[2].GetComponent<BoxCollider2D>().enabled = false;
             }
-            float m = (float)biru / 2f;
-            Un[2].text = Mathf.Floor(m).ToString();
         }
         else if(bahan == "kunyit")
         {
@@ -272,9 +361,7 @@ public class MenentukanPolaJamu : MonoBehaviour
                 biru = 2;
                 nampan[2].GetComponent<BoxCollider2D>().enabled = false;
             }
-            Un[2].text = biru.ToString();
         }
-        
     }
 
     public void ButtonBahanLain(int s)
