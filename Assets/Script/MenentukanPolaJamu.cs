@@ -209,6 +209,32 @@ public class MenentukanPolaJamu : MonoBehaviour
         }
     }
 
+    public void JawabanHijau1(string h1)
+    {
+        hj2 = h1;
+
+        if(kunyit)
+        {
+            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            {
+                JawabanBenar();
+            }
+        }
+    }
+
+    public void JawabanBiru1(string b1)
+    {
+        br2 = b1;
+
+        if(kunyit)
+        {
+            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            {
+                JawabanBenar();
+            }
+        }
+    }
+
     public void InputBahan(string bahan , string warna)
     {
         if(warna == "hijau")
@@ -243,7 +269,6 @@ public class MenentukanPolaJamu : MonoBehaviour
                 nampan[1].transform.GetChild(i).gameObject.SetActive(true);
             }
             nampan[1].GetComponent<BoxCollider2D>().enabled = false;
-            Un[1].text = hijau1.ToString();
         }
     }
 
@@ -260,7 +285,6 @@ public class MenentukanPolaJamu : MonoBehaviour
             {
                 nampan[3].GetComponent<BoxCollider2D>().enabled = false;
             }
-            Un[3].text = biru1.ToString();
         }
     }
 
