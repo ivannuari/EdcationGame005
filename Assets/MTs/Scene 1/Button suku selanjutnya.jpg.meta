@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 413a4a873267dc948890c966fd83dc57
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8928261328562323213
+    second: Button suku selanjutnya_0
+  - first:
+      213: 696693970694017112
+    second: Button suku selanjutnya_1
+  - first:
+      213: 2456784380313442087
+    second: Button suku selanjutnya_2
+  - first:
+      213: -1163148926768664262
+    second: Button suku selanjutnya_3
+  - first:
+      213: -3569612010666951376
+    second: Button suku selanjutnya_4
+  - first:
+      213: 7021812486824484568
+    second: Button suku selanjutnya_5
+  - first:
+      213: -3909907899977479167
+    second: Button suku selanjutnya_6
+  - first:
+      213: 920461427361626921
+    second: Button suku selanjutnya_7
+  - first:
+      213: -1617734449191075141
+    second: Button suku selanjutnya_8
+  - first:
+      213: -8854463017572105393
+    second: Button suku selanjutnya_9
+  - first:
+      213: 7528228782921579099
+    second: Button suku selanjutnya_10
+  - first:
+      213: 294103437063287640
+    second: Button suku selanjutnya_11
+  - first:
+      213: -8344314670432009128
+    second: Button suku selanjutnya_12
+  - first:
+      213: -3931972399760835685
+    second: Button suku selanjutnya_13
+  - first:
+      213: -2429954274190308728
+    second: Button suku selanjutnya_14
+  - first:
+      213: 2393090694021735483
+    second: Button suku selanjutnya_15
+  - first:
+      213: -3852957192819278358
+    second: Button suku selanjutnya_16
+  - first:
+      213: 6975042930649831596
+    second: Button suku selanjutnya_17
+  - first:
+      213: -8446395905507323110
+    second: Button suku selanjutnya_18
+  - first:
+      213: -3569566104026731447
+    second: Button suku selanjutnya_19
+  - first:
+      213: 807692798420096359
+    second: Button suku selanjutnya_20
+  - first:
+      213: 2290594398458722494
+    second: Button suku selanjutnya_21
+  - first:
+      213: 3537713550859616733
+    second: Button suku selanjutnya_22
+  - first:
+      213: -4779595608691602077
+    second: Button suku selanjutnya_23
+  - first:
+      213: -2323471492239581975
+    second: Button suku selanjutnya_24
+  - first:
+      213: 480777028594024550
+    second: Button suku selanjutnya_25
+  - first:
+      213: 6868418708047742697
+    second: Button suku selanjutnya_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Button suku selanjutnya_0
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 245
+        width: 765
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f70d6df5e87eb70800000000000000
+      internalID: 8928261328562323213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_1
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 371
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8509f50a9772ba900800000000000000
+      internalID: 696693970694017112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_2
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 370
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7279f469060481220800000000000000
+      internalID: 2456784380313442087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_3
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 371
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31b317b63aabdfe0800000000000000
+      internalID: -1163148926768664262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 370
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d7a36f9c0367ec0800000000000000
+      internalID: -3569612010666951376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_5
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 371
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de539ce04d727160800000000000000
+      internalID: 7021812486824484568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_6
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 371
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c49550b773db9c0800000000000000
+      internalID: -3909907899977479167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_7
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 370
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bb6579ac226cc00800000000000000
+      internalID: 920461427361626921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_8
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 371
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2cd0fe617ac89e0800000000000000
+      internalID: -1617734449191075141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_9
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 370
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4308c86cc0ae1580800000000000000
+      internalID: -8854463017572105393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_10
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 371
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a79e91134a97860800000000000000
+      internalID: 7528228782921579099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_11
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 370
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853f06d848dd41400800000000000000
+      internalID: 294103437063287640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_12
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 369
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854c1de640a033c80800000000000000
+      internalID: -8344314670432009128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_13
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 371
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b7d955fe3de69c0800000000000000
+      internalID: -3931972399760835685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_14
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 369
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ac17a4671174ed0800000000000000
+      internalID: -2429954274190308728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_15
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 277
+        width: 8
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34657c9e47f53120800000000000000
+      internalID: 2393090694021735483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_16
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 312
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed7833d8db878ac0800000000000000
+      internalID: -3852957192819278358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_17
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 277
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca89b7e07945cc060800000000000000
+      internalID: 6975042930649831596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_18
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 276
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a131ce3ccaf58ca80800000000000000
+      internalID: -8446395905507323110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_19
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 276
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c263f6a8a567ec0800000000000000
+      internalID: -3569566104026731447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_20
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 276
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76598712250853b00800000000000000
+      internalID: 807692798420096359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_21
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 277
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8b1a42873d9cf10800000000000000
+      internalID: 2290594398458722494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_22
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 263
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1c21c1bbb781130800000000000000
+      internalID: 3537713550859616733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_23
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 275
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d8be50e177badb0800000000000000
+      internalID: -4779595608691602077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_24
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 277
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec1053fcfe51cfd0800000000000000
+      internalID: -2323471492239581975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_25
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 263
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660c38509201ca600800000000000000
+      internalID: 480777028594024550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button suku selanjutnya_26
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 276
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e645ddac66815f50800000000000000
+      internalID: 6868418708047742697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
