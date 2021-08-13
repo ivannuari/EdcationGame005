@@ -9,7 +9,7 @@ public class MenentukanPolaTaman : MonoBehaviour
 {
     public GameObject[] papan;
 
-    public TMP_Text[] Un;
+    public TMP_InputField[] Un;
     public TMP_Text dialogue;
     public Button b_lain;
 
@@ -54,7 +54,15 @@ public class MenentukanPolaTaman : MonoBehaviour
 
     void Selesai()
     {
-        foreach (TMP_InputField i in inputan)
+        foreach (TMP_InputField i Un)
+        {
+            i.interactable = true;
+        }
+    }
+
+    void SelesaiJawab()
+    {
+        foreach (TMP_InputField i inputan)
         {
             i.interactable = true;
         }

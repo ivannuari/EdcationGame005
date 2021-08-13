@@ -111,12 +111,9 @@ public class MenentukanPolaKue : MonoBehaviour
     {
         hj = h;
 
-        if(kue)
+        if(hj == "1" && kn == "2" && br == "3")
         {
-            if(hj == "1" && kn == "2" && br == "3")
-            {
-                JawabanBenar();
-            }
+            JawabanBenar();
         }
     }
 
@@ -124,12 +121,9 @@ public class MenentukanPolaKue : MonoBehaviour
     {
         kn = k;
 
-        if(kue)
+        if(hj == "1" && kn == "2" && br == "3")
         {
-            if(hj == "1" && kn == "2" && br == "3")
-            {
-                JawabanBenar();
-            }
+            JawabanBenar();
         }
     }
 
@@ -137,12 +131,9 @@ public class MenentukanPolaKue : MonoBehaviour
     {
         br = b;
 
-        if(kue)
+        if(hj == "1" && kn == "2" && br == "3")
         {
-            if(hj == "1" && kn == "2" && br == "3")
-            {
-                JawabanBenar();
-            }
+            JawabanBenar();
         }
     }
 
