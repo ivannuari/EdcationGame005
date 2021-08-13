@@ -17,11 +17,15 @@ public class MenentukanPolaTaman : MonoBehaviour
     private int kuning = 0, hijau = 0,orange = 0;
     public bool isBunga = false ,isKursi = false, bunga = false , kursi = false;
 
-    private string jawabanA , jawabanB , jawabanC;
+    private string jawabanA , jawabanB , jawabanC , kn , hj , or;
 
     void Start()
     {
         foreach (TMP_InputField i in inputan)
+        {
+            i.interactable = false;
+        }
+        foreach (TMP_InputField i in Un)
         {
             i.interactable = false;
         }
@@ -54,7 +58,7 @@ public class MenentukanPolaTaman : MonoBehaviour
 
     void Selesai()
     {
-        foreach (TMP_InputField i Un)
+        foreach (TMP_InputField i in Un)
         {
             i.interactable = true;
         }
@@ -62,9 +66,69 @@ public class MenentukanPolaTaman : MonoBehaviour
 
     void SelesaiJawab()
     {
-        foreach (TMP_InputField i inputan)
+        foreach (TMP_InputField i in inputan)
         {
             i.interactable = true;
+        }
+    }
+
+    public void Input1(string h)
+    {
+        hj = h;
+
+        if(kursi)
+        {
+            if(hj == "1" && kn == "2" && or == "3")
+            {
+                SelesaiJawab();
+            }
+        }
+        else if(bunga)
+        {
+            if(hj == "0" && kn == "4" && or == "4")
+            {
+                SelesaiJawab();
+            }
+        }
+    }
+
+    public void Input2(string k)
+    {
+        kn = k;
+
+        if(kursi)
+        {
+            if(hj == "1" && kn == "2" && or == "3")
+            {
+                SelesaiJawab();
+            }
+        }
+         else if(bunga)
+        {
+            if(hj == "0" && kn == "4" && or == "4")
+            {
+                SelesaiJawab();
+            }
+        }
+    }
+
+    public void Input3(string o)
+    {
+        or = o;
+
+        if(kursi)
+        {
+            if(hj == "1" && kn == "2" && or == "3")
+            {
+                SelesaiJawab();
+            }
+        }
+         else if(bunga)
+        {
+            if(hj == "0" && kn == "4" && or == "4")
+            {
+                SelesaiJawab();
+            }
         }
     }
 
@@ -154,8 +218,6 @@ public class MenentukanPolaTaman : MonoBehaviour
         }
         if(bahan == "bunga")
         {
-            float m = (float)kuning / 2f;
-            Un[0].text = Mathf.Floor(m).ToString();
             if(kuning >= 8)
             {
                 kuning = 8;
@@ -164,7 +226,6 @@ public class MenentukanPolaTaman : MonoBehaviour
         }
         if(bahan == "kursi")
         {
-            Un[0].text = kuning.ToString();
             if(kuning >= 3)
             {
                 kuning = 3;
@@ -181,7 +242,6 @@ public class MenentukanPolaTaman : MonoBehaviour
         }
         if(bahan == "bunga")
         {
-            Un[1].text = hijau.ToString();
             if(hijau >= 4)
             {
                 hijau = 4;
@@ -190,7 +250,6 @@ public class MenentukanPolaTaman : MonoBehaviour
         }
         if(bahan == "kursi")
         {
-            Un[1].text = hijau.ToString();
             if(hijau >= 2)
             {
                 hijau = 2;
@@ -207,7 +266,6 @@ public class MenentukanPolaTaman : MonoBehaviour
         }
         if(bahan == "kursi")
         {
-            Un[2].text = orange.ToString();
             if(orange >= 1)
             {
                 orange = 1;
