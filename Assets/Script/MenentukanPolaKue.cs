@@ -8,20 +8,24 @@ using UnityEngine.SceneManagement;
 public class MenentukanPolaKue : MonoBehaviour
 {
     public GameObject[] papan;
-    public TMP_Text[] Un;
+    public TMP_InputField[] Un;
 
     public TMP_Text dialogue;
     public Button b_lain;
 
     public TMP_InputField[] inputan;
 
-    public bool isKue = false , isCake = false , cake = false;
+    public bool isKue = false , isCake = false , cake = false , kue  = false;
 
     private int hijau = 0 , kuning = 0 , biru = 0;
-    private string jawabanA , jawabanB;
+    private string jawabanA , jawabanB , hj , kn , br;
 
     void Start()
-    {
+    {   
+        foreach (TMP_InputField t in Un)
+        {
+            t.interactable = false;
+        }
         foreach (TMP_InputField t in inputan)
         {
             t.interactable = false;
@@ -37,6 +41,7 @@ public class MenentukanPolaKue : MonoBehaviour
             {
                 Selesai();
                 isKue = false;
+                kue = true;
             }
         }
 
@@ -52,6 +57,15 @@ public class MenentukanPolaKue : MonoBehaviour
     }
 
     void Selesai()
+    {
+        dialogue.text = "masukan jawabanmu!";
+        foreach (TMP_InputField t in Un)
+        {
+            t.interactable = true;
+        }
+    }
+
+    void JawabanBenar()
     {
         dialogue.text = "masukan jawabanmu!";
         foreach (TMP_InputField t in inputan)
@@ -93,6 +107,45 @@ public class MenentukanPolaKue : MonoBehaviour
         }
     }
 
+    public void InputNilai1(string h)
+    {
+        hj = h;
+
+        if(kue)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+    }
+
+    public void InputNilai2(string k)
+    {
+        kn = k;
+
+        if(kue)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+    }
+
+    public void Inpunilai3(string b)
+    {
+        br = b;
+
+        if(kue)
+        {
+            if(hj == "1" && kn == "2" && br == "3")
+            {
+                JawabanBenar();
+            }
+        }
+    }
+
     public void InputBahan(string bahan , string warna)
     {
         if(warna == "hijau")
@@ -119,9 +172,6 @@ public class MenentukanPolaKue : MonoBehaviour
 
         if(n == "kue")
         {
-            float m = (float)hijau / 4f;
-            Un[0].text = Mathf.Floor(m).ToString();
-
             if(n == "kue" && hijau >= 4)
             {
                 hijau = 4;
@@ -130,8 +180,6 @@ public class MenentukanPolaKue : MonoBehaviour
         }
         else if(n == "cake")
         {
-            Un[0].text = hijau.ToString();
-
             if(hijau >= 1)
             {
                 hijau = 1;
@@ -151,9 +199,6 @@ public class MenentukanPolaKue : MonoBehaviour
 
         if(n == "kue")
         {
-            float m = (float)kuning / 4f;
-            Un[1].text = Mathf.Floor(m).ToString();
-            
             if(n == "kue" && kuning >= 8)
             {
                 kuning = 8;
@@ -162,9 +207,6 @@ public class MenentukanPolaKue : MonoBehaviour
         }
         else if(n == "cake")
         {
-            float m = (float)kuning / 2f;
-            Un[1].text = Mathf.Floor(m).ToString();
-            
             if(kuning >= 4)
             {
                 kuning = 4;
@@ -183,9 +225,6 @@ public class MenentukanPolaKue : MonoBehaviour
 
         if(n =="kue")
         {
-            float m = (float)biru / 4f;
-            Un[2].text = Mathf.Floor(m).ToString();
-            
             if(n == "kue" && biru >= 12)
             {
                 biru = 12;
@@ -194,9 +233,6 @@ public class MenentukanPolaKue : MonoBehaviour
         }
         else if(n == "cake")
         {
-            float m = (float)biru / 3f;
-            Un[2].text = Mathf.Floor(m).ToString();
-            
             if(biru >= 9)
             {
                 biru = 9;

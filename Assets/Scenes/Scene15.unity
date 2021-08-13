@@ -12102,6 +12102,7 @@ GameObject:
   - component: {fileID: 1599148518}
   - component: {fileID: 1599148517}
   - component: {fileID: 1599148519}
+  - component: {fileID: 1599148520}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -12167,6 +12168,31 @@ MonoBehaviour:
   isSereh: 0
   isJahe: 0
   isKunyit: 1
+--- !u!114 &1599148520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599148516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a903805865dd77418db84615cf69b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kunyit:
+  - {fileID: 1110305214}
+  - {fileID: 1810432247}
+  - {fileID: 1603881733}
+  - {fileID: 891279538}
+  - {fileID: 148076267}
+  - {fileID: 1928112098}
+  - {fileID: 912538501}
+  - {fileID: 2138040511}
+  - {fileID: 949755271}
+  - {fileID: 816329366}
+  - {fileID: 1248710105}
+  - {fileID: 923806644}
 --- !u!1 &1603881733
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,15 +6,11 @@ public class Level15 : MonoBehaviour
 {
     public List<GameObject> kunyit;
 
-    void Update()
+    public void DeleteAllKunyit()
     {
-        // foreach (GameObject g in kunyit)
-        // {
-        //     kunyit.Remove(!g.activeInHierarchy);
-        // }
-        if(kunyit.Count < 5)
+        foreach (GameObject g in kunyit)
         {
-            Debug.Log("kurang");
+            Destroy(g);
         }
     }
 }

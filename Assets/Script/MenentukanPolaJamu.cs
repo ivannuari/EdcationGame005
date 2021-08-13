@@ -66,6 +66,7 @@ public class MenentukanPolaJamu : MonoBehaviour
             if(hijau == 2 && hijau1 == 1 && biru == 2 && biru1 == 3)
             {
                 Selesai();
+                GetComponent<Level15>().DeleteAllKunyit();
                 isKunyit = false;
                 kunyit = true;
             }
@@ -75,6 +76,7 @@ public class MenentukanPolaJamu : MonoBehaviour
     void Selesai()
     {
         dialogue.text = "masukan jawaban mu!";
+        
         foreach (TMP_InputField i in Un)
         {
             i.interactable = true;
@@ -131,7 +133,7 @@ public class MenentukanPolaJamu : MonoBehaviour
     public void JawabanKuning(string k)
     {
         kn = k;
-        Debug.Log(k);
+        
         if(sereh)
         {
             if(hj == "1" && kn == "2" && br == "3")
@@ -148,7 +150,7 @@ public class MenentukanPolaJamu : MonoBehaviour
         }
         else if(kunyit)
         {
-            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            if(hj == "2" && hj2 == "1" && br == "2" && br2 == "3")
             {
                 JawabanBenar();
             }
@@ -158,7 +160,7 @@ public class MenentukanPolaJamu : MonoBehaviour
     public void JawabanHijau(string h)
     {
         hj = h;
-        Debug.Log(h);
+      
         if(sereh)
         {
             if(hj == "1" && kn == "2" && br == "3")
@@ -175,7 +177,7 @@ public class MenentukanPolaJamu : MonoBehaviour
         }
         else if(kunyit)
         {
-            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            if(hj == "2" && hj2 == "1" && br == "2" && br2 == "3")
             {
                 JawabanBenar();
             }
@@ -185,7 +187,7 @@ public class MenentukanPolaJamu : MonoBehaviour
     public void JawabanBiru(string b)
     {
         br = b;
-        Debug.Log(b);
+ 
         if(sereh)
         {
             if(hj == "1" && kn == "2" && br == "3")
@@ -202,7 +204,7 @@ public class MenentukanPolaJamu : MonoBehaviour
         }
         else if(kunyit)
         {
-            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            if(hj == "2" && hj2 == "1" && br == "2" && br2 == "3")
             {
                 JawabanBenar();
             }
@@ -212,10 +214,10 @@ public class MenentukanPolaJamu : MonoBehaviour
     public void JawabanHijau1(string h1)
     {
         hj2 = h1;
-
+        
         if(kunyit)
         {
-            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            if(hj == "2" && hj2 == "1" && br == "2" && br2 == "3")
             {
                 JawabanBenar();
             }
@@ -225,10 +227,10 @@ public class MenentukanPolaJamu : MonoBehaviour
     public void JawabanBiru1(string b1)
     {
         br2 = b1;
-
+       
         if(kunyit)
         {
-            if(hj == "1" && hj2 == "2" && br == "2" && br2 == "3")
+            if(hj == "2" && hj2 == "1" && br == "2" && br2 == "3")
             {
                 JawabanBenar();
             }
