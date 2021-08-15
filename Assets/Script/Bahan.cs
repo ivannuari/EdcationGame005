@@ -12,8 +12,10 @@ public class Bahan : MonoBehaviour
     private Vector3 startPos;
     private Vector3 StartSize;
     private Quaternion StartRot;
+    private bool isDraging = false;
 
     SpriteRenderer rend;
+    BoxCollider2D cl2D;
 
     void Start()
     {
@@ -22,10 +24,12 @@ public class Bahan : MonoBehaviour
         StartRot = transform.rotation;
 
         rend = GetComponent<SpriteRenderer>();
+        cl2D = GetComponent<BoxCollider2D>();
     }
 
     void OnMouseDown()
     {
+        isDraging = true;
         if(tukangKue)
         {
             transform.localScale = new Vector3(0.05f , 0.05f , 1f);
@@ -53,10 +57,13 @@ public class Bahan : MonoBehaviour
 
     void OnMouseUp()
     {
+        isDraging = false;
         transform.position = startPos;
         transform.localScale = StartSize;
         transform.rotation = StartRot;
+
         rend.enabled = true;
+        cl2D.enabled = true;
     }
 
     void OnTriggerEnter2D(Collider2D cl)
@@ -112,6 +119,10 @@ public class Bahan : MonoBehaviour
             SpriteRenderer r = cl.GetComponent<SpriteRenderer>();
             if(r.sprite == rend.sprite && r.enabled == false)
             {
+                isDraging = false;
+                rend.enabled = false;
+                cl2D.enabled = false;
+                transform.position = startPos;
                 r.enabled = true;
                 if(r.enabled == true)
                 {
@@ -124,7 +135,10 @@ public class Bahan : MonoBehaviour
             SpriteRenderer r = cl.GetComponent<SpriteRenderer>();
             if(cl.gameObject.name == gameObject.name && r.enabled == false)
             {
-                r.enabled = true;
+                isDraging = false;
+                rend.enabled = false;
+                cl2D.enabled = false;
+                
                 if(r.enabled == true)
                 {
                     GameObject LM = LevelManager.LM.gameObject;
