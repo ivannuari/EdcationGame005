@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool isMute = false;
 
     AudioSource source;
+    TouchScreenKeyboard keyboard;
 
     void Start()
     {
@@ -101,5 +102,10 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(18);
         }
+    }
+
+    public void BukaKeyboardMobile()
+    {
+        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
     }
 }

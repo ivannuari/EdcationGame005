@@ -27,6 +27,12 @@ public class Level1 : MonoBehaviour
             }
         }
     }
+
+    public void BukaKeyboard()
+    {
+        GameManager.GM.BukaKeyboardMobile();
+    }
+    
     public void PilihMenu(int i)
     {
         if(i == 0)

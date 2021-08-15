@@ -72,6 +72,7 @@ public class Bahan : MonoBehaviour
         {
             transform.position = startPos;
             rend.enabled = false;
+            cl2D.enabled = false;
             if(namaBahan == "jahe")
             {
                 TukangJamu.TJ.m_jahe++;
@@ -138,6 +139,7 @@ public class Bahan : MonoBehaviour
                 isDraging = false;
                 rend.enabled = false;
                 cl2D.enabled = false;
+                r.enabled = true;
                 
                 if(r.enabled == true)
                 {

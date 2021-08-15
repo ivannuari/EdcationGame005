@@ -181,8 +181,11 @@ public class TukangKue : MonoBehaviour
             dialogue[p].text = "saya tidak pesan ini.";
             yield return new WaitForSeconds(1f);
             StartCoroutine(SetDialogue());
-        }
-        
+        }   
     }
 
+    public void BukaKeyboard()
+    {
+        GameManager.GM.BukaKeyboardMobile();
+    }
 }
