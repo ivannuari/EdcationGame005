@@ -42,6 +42,7 @@ public class TukangKue : MonoBehaviour
 
     public void InputUkuranBoxPertama(string n)
     {
+        KeyboardController.KC.keyboardStatus(true);
         angka1 = int.Parse(n);
     }
     public void InputUkuranBoxKedua(string n)

@@ -2139,6 +2139,7 @@ RectTransform:
   - {fileID: 2127294948}
   - {fileID: 707166191}
   - {fileID: 1352712635}
+  - {fileID: 1126647740}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9409,17 +9410,29 @@ MonoBehaviour:
   m_OnSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 646361545}
-        m_TargetAssemblyTypeName: TukangKue, Assembly-CSharp
-        m_MethodName: BukaKeyboard
-        m_Mode: 1
+      - m_Target: {fileID: 1073013348}
+        m_TargetAssemblyTypeName: KeyboardController, Assembly-CSharp
+        m_MethodName: keyboardStatus
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1073013348}
+        m_TargetAssemblyTypeName: KeyboardController, Assembly-CSharp
+        m_MethodName: SetInputFiled
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 650330918}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   m_OnDeselect:
     m_PersistentCalls:
@@ -9432,7 +9445,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 646361545}
+        m_TargetAssemblyTypeName: TukangKue, Assembly-CSharp
+        m_MethodName: InputUkuranBoxPertama
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12722,6 +12747,103 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &896756052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 106456776}
+    m_Modifications:
+    - target: {fileID: 6961999901801342485, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_Name
+      value: Panel keyboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1242b07177b144740be678ff62abc178, type: 3}
 --- !u!1 &919505753
 GameObject:
   m_ObjectHideFlags: 0
@@ -14559,6 +14681,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1073013348 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6961999902480594940, guid: 1242b07177b144740be678ff62abc178, type: 3}
+  m_PrefabInstance: {fileID: 896756052}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df1d01b60703f64491a2c31ea5c0d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1080399021
 GameObject:
   m_ObjectHideFlags: 0
@@ -15732,6 +15865,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!224 &1126647740 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6961999901801342490, guid: 1242b07177b144740be678ff62abc178, type: 3}
+  m_PrefabInstance: {fileID: 896756052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1130695219
 GameObject:
   m_ObjectHideFlags: 0
@@ -30805,17 +30943,29 @@ MonoBehaviour:
   m_OnSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 646361545}
-        m_TargetAssemblyTypeName: TukangKue, Assembly-CSharp
-        m_MethodName: BukaKeyboard
-        m_Mode: 1
+      - m_Target: {fileID: 1073013348}
+        m_TargetAssemblyTypeName: KeyboardController, Assembly-CSharp
+        m_MethodName: keyboardStatus
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1073013348}
+        m_TargetAssemblyTypeName: KeyboardController, Assembly-CSharp
+        m_MethodName: SetInputFiled
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2117204661}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   m_OnDeselect:
     m_PersistentCalls:
@@ -30828,7 +30978,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 646361545}
+        m_TargetAssemblyTypeName: TukangKue, Assembly-CSharp
+        m_MethodName: InputUkuranBoxKedua
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
